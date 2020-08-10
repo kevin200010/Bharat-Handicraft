@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>shop handicraft</title>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+	<script type="text/javascript">
+		function addpara()
+		{
+			//document.getElementById("paragraph").innerHTML = "thanks";
+			var name = document.getElementById("txt").value;
+			if(name.lenght == 0)
+			{
+				document.getElementById("paragraph").innerHTML = "please enter name";
+			}
+			else
+			{
+				document.getElementById("paragraph").innerHTML  += "thanks " + name;
+			}
+		}
+	</script>
+</head>
+<body>
+	<header>
+		<img id="logo"src="wooden.jpeg">
+		<span id="manu">
+			<h1>Hadicraft.Onine.com</h1>
+
+			<ul>
+				<li>Home 
+					<ul>
+						<li>what</li>
+						<li>company</li>
+						<li>founder</li>
+					</ul>
+				</li>
+				<li>About Us
+					<ul>
+						<li>member
+							<ul>
+								<li>Kevin</li>
+								<li>Heet</li>
+								<li>Darshan</li>
+							</ul></li>
+						<li>co-fonders</li>
+					</ul>
+				</li>
+				<li>Products
+					<ul>
+						<li>wood</li>
+						<li>plastic</li>
+						<li>home-decore</li>
+					</ul>
+				</li>
+				<li>Contect US
+					<ul>
+						<li>phone</li>
+					</ul>
+				</li>
+			</ul>
+		</span>
+		
+		<img id="logo"src="wooden.jpeg">
+	</header>
+	<div id="offer_display">
+		<div id="hori-grid"></div>
+		<div id="hori-grid"></div>
+		<div id="hori-grid"></div>
+		<div id="hori-grid"></div>
+	</div>
+	<input id="txt"type="text" name="box">
+	<button onclick="addpara();"id= "butter">click me</button>
+	<p id = "paragraph"></p>
+	
+</body>
+</html>
